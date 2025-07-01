@@ -1,0 +1,11 @@
+def calc(*args):
+    sum = 0
+    for i in args:
+        sum += i
+    avg = sum / len(args)
+    maxi = max(args)
+    mini = min(args)
+    return sum, avg, maxi, mini
+
+total, average, maximum, minimum = calc(1, 2, 3, 4, 5)
+print(total, average, maximum, minimum)
