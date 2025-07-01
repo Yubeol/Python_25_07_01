@@ -1,12 +1,6 @@
-# 함수
-
-def multiply(a,b): # 함수 헤더
-    a=int(a) # 함수 본체
-    b=int(b)
-    return a*b #리턴
-
-ina, inb=input('정수두개[ex:10 20]: ').strip().split(' ')
-res=multiply(ina,inb) # 함수 호출
+#매개변수를 지정하여 호출하기 4.둘다있는 경우
+def sub(a, b):
+    return a - b
+# res=sub(2,3) # 일반적인 경우
+res=sub (b=3, a=2) #특정 매개변수에 지정해서 값을 넣음
 print(res)
-# print(multiply(ina,inb))
-# print(res)
