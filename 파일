@@ -1,7 +1,28 @@
-f = open('test,txt','a') # 'a' 어펜드모드
-while  1:
-    str = input('글써[끝:0]')
-    if str == '0':
-        break
-    f.write(str+'\n')
-f.close()
+def filewrite():
+    f = open('test,txt', 'w')
+    while 1:
+        str = input('글써[끝:0]')
+        if str == '0':
+            break
+        f.write(str + '\n')
+    f.close()
+
+def fileread():
+    f = open('test,txt', 'r')
+    while 1:
+        str = f.readline()
+        if str == '':
+            break
+        print(str)
+    f.close()
+
+if __name__ == '__main__':
+    while True:
+        conf=input(['선택[1:읽어, 2:써, 0:끝'])
+        if conf == '1':
+            fileread()
+        elif conf == '2':
+            filewrite()
+        else:
+            print('bye~~~')
+            break
