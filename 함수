@@ -1,0 +1,12 @@
+# 함수
+
+def multiply(a,b): # 함수 헤더
+    a=int(a) # 함수 본체
+    b=int(b)
+    return a*b #리턴
+
+ina, inb=input('정수두개[ex:10 20]: ').strip().split(' ')
+res=multiply(ina,inb) # 함수 호출
+print(res)
+# print(multiply(ina,inb))
+# print(res)
