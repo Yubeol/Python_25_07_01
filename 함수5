@@ -9,3 +9,4 @@ def calc(*args):
 
 total, average, maximum, minimum = calc(1, 2, 3, 4, 5)
 print(total, average, maximum, minimum)
+print(calc(1, 2, 3, 4, 5))
