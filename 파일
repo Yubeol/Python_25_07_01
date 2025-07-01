@@ -1,4 +1,4 @@
-f = open('test,txt','w') # 'w' 쓰기모드
+f = open('test,txt','a') # 'a' 어펜드모드
 while  1:
     str = input('글써[끝:0]')
     if str == '0':
