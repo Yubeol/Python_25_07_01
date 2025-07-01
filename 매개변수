@@ -1,3 +1,4 @@
+#1
 def add_many(*args):
     sum=0
     print("args={args}".format(args))
