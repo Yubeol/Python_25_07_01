@@ -1,0 +1,35 @@
+#중국집 메뉴
+def menu():
+    print('====menu====')
+    print('1.짜장면')
+    print('2.짬뽕')
+    print('3.우동')
+    print('4.볶음밥')
+    print('0.종료.')
+    print('===========')
+    print('선택:', end=' ')
+
+while True:
+    menu()
+    sel = int(input())
+
+    # if 1<=sel and sel<=4:
+    #     ea = int(input('몇인분: '))
+
+    if sel == 1:
+        menu='짜장면'
+    elif sel == 2:
+        menu='짬뽕'
+    elif sel == 3:
+        menu = '우동'
+    elif sel == 4:
+        menu = '볶음밥'
+    elif sel == 0:
+        print('안녕히 가세요~')
+        break
+    else:
+        print('그 메뉴는 없습니다, 다시 입력해 주세요')
+        continue
+
+    ea = int(input('몇인분: '))
+    print('%s가 %d그릇 내왔습니다. 맛있게 드세요~'%(menu,ea))
